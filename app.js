@@ -57,9 +57,8 @@ const selectItem = (event, img) => {
   if (item === -1) {
     sliders.push(img);
   } else {
-    var index = sliders.indexOf(img);
-    if (index > -1) {
-      sliders.splice(index, 1);
+    if (item > -1) {
+      sliders.splice(item, 1);
       element.classList.remove("added");
     }
   }
